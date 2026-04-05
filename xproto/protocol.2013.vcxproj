@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>xproto.vs2013</ProjectName>
+    <ProjectGuid>{B0222EDF-55BD-4EAD-8A72-D87C2AB88CC8}</ProjectGuid>
+    <RootNamespace>protocol</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../client/lib.vc12\</OutDir>
+    <IntDir>debug.vc12\</IntDir>
+    <EmbedManifest>true</EmbedManifest>
+    <TargetExt>.lib</TargetExt>
+    <TargetName>xproto_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../client/lib.vc12\</OutDir>
+    <IntDir>release.vc12\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(WTL_INCLUDE);$(IncludePath)</IncludePath>
+    <TargetName>xproto</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../;../include;../include/common;../include/third;../include/client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOLAYERS;NSOX_WIN32;WIN32_CLIETN_PROTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>json_d.lib;libeay32.lib;ssleay32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)xproto_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>../client/lib.vc12;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>../client/lib.vc9/xproto_d.lib</ImportLibrary>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)xproto_d.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <AdditionalIncludeDirectories>../;../include;../include/common;../include/third;../include/client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOLAYERS;NSOX_WIN32;WIN32_CLIETN_PROTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;ws2_32.lib;wininet.lib;rpcrt4.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)xproto.lib</OutputFile>
+      <AdditionalLibraryDirectories>../client/lib.vc9;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>../client/lib.vc9/xproto.lib</ImportLibrary>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)xproto.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xproto.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsyncSocketEx.h" />
+    <ClInclude Include="ConfigImp.h" />
+    <ClInclude Include="ConfigManagerImp.h" />
+    <ClInclude Include="front_connection.h" />
+    <ClInclude Include="IConfigManager.h" />
+    <ClInclude Include="ImBase.h" />
+    <ClInclude Include="InfoBase.h" />
+    <ClInclude Include="Login.h" />
+    <ClInclude Include="MicrophoneListImp.h" />
+    <ClInclude Include="OpenPlatformInfo.h" />
+    <ClInclude Include="ProtoLink.h" />
+    <ClInclude Include="proxyManager.h" />
+    <ClInclude Include="RaidProto.h" />
+    <ClInclude Include="RaidUser.h" />
+    <ClInclude Include="report.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RulerChecker.h" />
+    <ClInclude Include="SessionImp.h" />
+    <ClInclude Include="SessionInfo.h" />
+    <ClInclude Include="SessionList.h" />
+    <ClInclude Include="SessionLiteInfo.h" />
+    <ClInclude Include="SessionManager.h" />
+    <ClInclude Include="SessionMemberListImp.h" />
+    <ClInclude Include="SessionPlugInImp.h" />
+    <ClInclude Include="SessionStreamManager.h" />
+    <ClInclude Include="SessRoleSource.h" />
+    <ClInclude Include="voice_queue.h" />
+    <ClInclude Include="VoiceDataManager.h" />
+    <ClInclude Include="VoiceDataStatistics.h" />
+    <ClInclude Include="WinPingMgr.h" />
+    <ClInclude Include="WsTcpSocket.h" />
+    <ClInclude Include="WsUdpSocket.h" />
+    <ClInclude Include="helper\helper.h" />
+    <ClInclude Include="helper\RSAKey.h" />
+    <ClInclude Include="helper\sso.h" />
+    <ClInclude Include="helper\tmpbuf.h" />
+    <ClInclude Include="helper\utf8to.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="front_connection.cpp" />
+    <ClCompile Include="helper\RSAKey.cpp" />
+    <ClCompile Include="helper\utf8to.cpp" />
+    <ClCompile Include="AsyncSocketEx.cpp" />
+    <ClCompile Include="ConfigImp.cpp" />
+    <ClCompile Include="ConfigManagerImp.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ImBase.cpp" />
+    <ClCompile Include="InfoBase.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="MicrophoneListImp.cpp" />
+    <ClCompile Include="OpenPlatformInfo.cpp" />
+    <ClCompile Include="ProtoLink.cpp" />
+    <ClCompile Include="proxyManager.cpp" />
+    <ClCompile Include="RaidProto.cpp" />
+    <ClCompile Include="RaidUser.cpp" />
+    <ClCompile Include="report.cpp" />
+    <ClCompile Include="Request.cpp" />
+    <ClCompile Include="RulerChecker.cpp" />
+    <ClCompile Include="SessionImp.cpp" />
+    <ClCompile Include="SessionInfo.cpp" />
+    <ClCompile Include="SessionList.cpp" />
+    <ClCompile Include="SessionLiteInfo.cpp" />
+    <ClCompile Include="SessionManager.cpp" />
+    <ClCompile Include="SessionMemberListImp.cpp" />
+    <ClCompile Include="SessionPlugInImp.cpp" />
+    <ClCompile Include="SessionStreamManager.cpp" />
+    <ClCompile Include="SessRoleSource.cpp" />
+    <ClCompile Include="voice_queue.cpp" />
+    <ClCompile Include="VoiceDataManager.cpp" />
+    <ClCompile Include="VoiceDataStatistics.cpp" />
+    <ClCompile Include="WinPingMgr.cpp" />
+    <ClCompile Include="WsTcpSocket.cpp" />
+    <ClCompile Include="WsUdpSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="version.h.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

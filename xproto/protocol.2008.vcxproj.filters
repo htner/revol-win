@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{9df29077-3171-4824-b8c2-864f96b55a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xproto.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsyncSocketEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigManagerImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="front_connection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Gateway.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IConfigManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MicrophoneListImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenPlatformInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtoLink.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="proxyManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RaidProto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RaidUser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="report.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerChecker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionLiteInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionMemberListImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionPlugInImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionStreamManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SessRoleSource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="voice_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VoiceDataManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VoiceDataStatistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinPingMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WsTcpSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WsUdpSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\helper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\RSAKey.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\sso.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\tmpbuf.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\utf8to.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="helper\RSAKey.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="helper\utf8to.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncSocketEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigManagerImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="front_connection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MicrophoneListImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenPlatformInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtoLink.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="proxyManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RaidProto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RaidUser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="report.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Request.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerChecker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionLiteInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionMemberListImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionPlugInImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionStreamManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SessRoleSource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="voice_queue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VoiceDataManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VoiceDataStatistics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinPingMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WsTcpSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WsUdpSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="version.h.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

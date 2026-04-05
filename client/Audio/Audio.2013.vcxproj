@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>xaudio.vs2013</ProjectName>
+    <ProjectGuid>{6455911F-6C06-4B09-B2C7-F4C4611D4992}</ProjectGuid>
+    <RootNamespace>xaudio</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../lib.vc12\</OutDir>
+    <IntDir>Debug.vc12\</IntDir>
+    <IncludePath>$(WTL_INCLUDE);$(IncludePath)</IncludePath>
+    <TargetName>xaudio_d</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../lib.vc12\</OutDir>
+    <IntDir>Release.vc12\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(WTL_INCLUDE);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../include;../../include/client;../webrtc;../webrtc/webrtc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NSOX_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)xaudio_d.lib</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalLibraryDirectories>D:\rex\webrtc\webrtc\build-windows\vs2013\modules\audio_device;../lib.vc12;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>speex_d.lib;speexdsp_d.lib;Debug\audio_device.lib;..\utility\source\Debug\webrtc_utility.lib;..\..\test\Debug\test_support_main.lib;..\..\gmock\gtest\Debug\gtest.lib;..\..\system_wrappers\source\Debug\system_wrappers.lib;..\audio_coding\main\source\Debug\audio_coding_module.lib;..\audio_coding\main\source\acm2\Debug\acm2.lib;..\audio_coding\neteq4\Debug\NetEq4.lib;..\audio_coding\codecs\g711\Debug\G711.lib;..\audio_coding\codecs\g722\Debug\G722.lib;..\audio_coding\codecs\ilbc\Debug\iLBC.lib;..\audio_coding\codecs\isac\main\source\Debug\iSAC.lib;..\audio_coding\codecs\isac\fix\source\Debug\iSACFix.lib;..\audio_coding\codecs\pcm16b\Debug\PCM16B.lib;..\audio_coding\neteq\Debug\NetEq.lib;..\audio_coding\codecs\cng\Debug\CNG.lib;..\audio_coding\codecs\opus\Debug\webrtc_opus.lib;..\audio_coding\codecs\opus\opus\Debug\opus.lib;..\media_file\source\Debug\media_file.lib;..\video_coding\main\source\Debug\webrtc_video_coding.lib;..\video_coding\codecs\i420\main\source\Debug\webrtc_i420.lib;..\video_coding\codecs\vp8\Debug\webrtc_vp8.lib;..\..\common_video\Debug\common_video.lib;..\..\common_video\libyuv\Debug\libyuv.lib;..\video_coding\utility\Debug\video_coding_utility.lib;D:\rex\webrtc\third_party\libvpx\Win32\Release\vpxmt.lib;..\..\common_audio\Debug\common_audio.lib;..\..\common_audio\Debug\common_audio_sse2.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;winmm.lib;..\..\gflags\Debug\gflags.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcpmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../../include;../../include/client;../webrtc;../webrtc/webrtc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;NSOX_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)xaudio.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioCodec.cpp" />
+    <ClCompile Include="AudioFilter_Base.cpp" />
+    <ClCompile Include="AudioFilter_Opus.cpp" />
+    <ClCompile Include="AudioFilter_Speex.cpp" />
+    <ClCompile Include="AudioInput.cpp" />
+    <ClCompile Include="AudioOutput.cpp" />
+    <ClCompile Include="AudioResampler.cpp" />
+    <ClCompile Include="AudioResamplerFactor.cpp" />
+    <ClCompile Include="RTCCore.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="dsutil.cpp" />
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="Mixer.cpp" />
+    <ClCompile Include="OpusCodec.cpp" />
+    <ClCompile Include="RTCEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioFilter_Opus.h" />
+    <ClInclude Include="AudioFilter_Speex.h" />
+    <ClInclude Include="AudioResampler.h" />
+    <ClInclude Include="AudioResamplerFactor.h" />
+    <ClInclude Include="Mixer.h" />
+    <ClInclude Include="RTCCore.h" />
+    <ClInclude Include="RTCEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
