@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B04E238F-7E4F-4A71-88DF-555007864015}</ProjectGuid>
+    <RootNamespace>nsox</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\backup\client\rex_8.0\windows\include;C:\Users\pc;D:\backup\client\rex_8.0\windows\include\common\nsox;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;NSOX_WIN32;WIN32_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)nsox.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)nsox.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;NSOX_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)nsox.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="nsox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstract_selector.h" />
+    <ClInclude Include="abstract_selector.hpp" />
+    <ClInclude Include="asynserversocket.h" />
+    <ClInclude Include="asynsocket.h" />
+    <ClInclude Include="asyntcpclient.h" />
+    <ClInclude Include="asyntcppeer.h" />
+    <ClInclude Include="asyntcpsocket.h" />
+    <ClInclude Include="asynudpsocket.h" />
+    <ClInclude Include="BaseProtocol.h" />
+    <ClInclude Include="block_buffer.h" />
+    <ClInclude Include="blockbuffer.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="connfactory.h" />
+    <ClInclude Include="default_proto_handler.h" />
+    <ClInclude Include="epoll_selector.h" />
+    <ClInclude Include="epoll_selector.hpp" />
+    <ClInclude Include="exception.h" />
+    <ClInclude Include="HttpParser.h" />
+    <ClInclude Include="httpserver.h" />
+    <ClInclude Include="int_types.h" />
+    <ClInclude Include="listen.h" />
+    <ClInclude Include="listen.hpp" />
+    <ClInclude Include="listensocket.h" />
+    <ClInclude Include="loki_alloctor.h" />
+    <ClInclude Include="loki_alloctor.hpp" />
+    <ClInclude Include="loki_threads.h" />
+    <ClInclude Include="nsox.h" />
+    <ClInclude Include="nsox_request.h" />
+    <ClInclude Include="nsoxall.h" />
+    <ClInclude Include="nsoxapp.h" />
+    <ClInclude Include="nsoxenv.h" />
+    <ClInclude Include="nu_except.h" />
+    <ClInclude Include="nu_packet.h" />
+    <ClInclude Include="nu_request.h" />
+    <ClInclude Include="nu_types.h" />
+    <ClInclude Include="nu_unix_sock.h" />
+    <ClInclude Include="nu_win_sock.h" />
+    <ClInclude Include="nuassert.h" />
+    <ClInclude Include="NuAutoPtr.h" />
+    <ClInclude Include="nuinit.h" />
+    <ClInclude Include="nulog.h" />
+    <ClInclude Include="nutimer.h" />
+    <ClInclude Include="packet.h" />
+    <ClInclude Include="property.h" />
+    <ClInclude Include="proto_conn.h" />
+    <ClInclude Include="proto_conn_handler.h" />
+    <ClInclude Include="proto_server.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="selector.h" />
+    <ClInclude Include="selector_sel.h" />
+    <ClInclude Include="selector_sel.hpp" />
+    <ClInclude Include="sever.h" />
+    <ClInclude Include="singleton.h" />
+    <ClInclude Include="sockbuffer.h" />
+    <ClInclude Include="sockcomm.h" />
+    <ClInclude Include="socket.h" />
+    <ClInclude Include="socket.hpp" />
+    <ClInclude Include="socketutil.h" />
+    <ClInclude Include="socketutil.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tcpclient.h" />
+    <ClInclude Include="tcpsocket.h" />
+    <ClInclude Include="tcpsocket.hpp" />
+    <ClInclude Include="threadconnhandler.h" />
+    <ClInclude Include="udpsocket.h" />
+    <ClInclude Include="unixdaemon.h" />
+    <ClInclude Include="varstr.h" />
+    <ClInclude Include="vector_map.h" />
+    <ClInclude Include="wheel_timer.h" />
+    <ClInclude Include="xxx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile.inc" />
+    <None Include="sh_unix.inl" />
+    <None Include="sh_win.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

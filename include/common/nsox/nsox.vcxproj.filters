@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nsox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstract_selector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_selector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asynserversocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asynsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asyntcpclient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asyntcppeer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asyntcpsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asynudpsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="block_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blockbuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="connfactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="default_proto_handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="epoll_selector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="epoll_selector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="httpserver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="int_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="listen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="listen.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="listensocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="loki_alloctor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="loki_alloctor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="loki_threads.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nsox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nsox_request.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nsoxall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nsoxapp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nsoxenv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nu_except.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nu_packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nu_request.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nu_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nu_unix_sock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nu_win_sock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nuassert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NuAutoPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nuinit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nulog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nutimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="property.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="proto_conn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="proto_conn_handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="proto_server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="selector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="selector_sel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="selector_sel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sever.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sockbuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sockcomm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="socketutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="socketutil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tcpclient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tcpsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tcpsocket.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threadconnhandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="udpsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="unixdaemon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="varstr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wheel_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xxx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile.inc">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="sh_unix.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="sh_win.inl">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

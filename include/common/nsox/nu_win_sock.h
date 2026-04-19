@@ -1,0 +1,51 @@
+#ifndef  __nu_win_socket_h
+#define  __nu_win_socket_h
+
+#include "winsock2.h"
+#include "windows.h"
+//#include "errno.h"
+
+#define NU_EWOULDBLOCK					WSAEWOULDBLOCK
+#define NU_EINPROGRESS					WSAEINPROGRESS
+#define NU_ECONNABORTED					WSAECONNABORTED
+#define NU_EINTR						EINTR
+#define NU_EAGAIN						EAGAIN
+#define NU_ETIMEDOUT					WSAETIMEDOUT
+#define NU_EINTR						EINTR
+#define NU_EADDRINUSE					WSAEADDRINUSE
+
+/*
+#define EALREADY					WSAEALREADY
+#define ENOTSOCK					WSAENOTSOCK
+#define EDESTADDRREQ				WSAEDESTADDRREQ
+#define EMSGSIZE					WSAEMSGSIZE
+#define EPROTOTYPE					WSAEPROTOTYPE
+#define ENOPROTOOPT					WSAENOPROTOOPT
+#define EPROTONOSUPPORT				WSAEPROTONOSUPPORT
+#define ESOCKTNOSUPPORT				WSAESOCKTNOSUPPORT
+#define EOPNOTSUPP					WSAEOPNOTSUPP
+#define EPFNOSUPPORT				WSAEPFNOSUPPORT
+#define EAFNOSUPPORT				WSAEAFNOSUPPORT
+#define EADDRINUSE					WSAEADDRINUSE
+#define EADDRNOTAVAIL				WSAEADDRNOTAVAIL
+#define ENETDOWN					WSAENETDOWN
+#define ENETUNREACH					WSAENETUNREACH
+#define ENETRESET					WSAENETRESET
+#define ECONNABORTED				WSAECONNABORTED
+#define ECONNRESET					WSAECONNRESET
+#define ENOBUFS						WSAENOBUFS
+#define EISCONN						WSAEISCONN
+#define ENOTCONN					WSAENOTCONN
+#define ESHUTDOWN					WSAESHUTDOWN
+#define ETOOMANYREFS				WSAETOOMANYREFS
+#define NU_ETIMEDOUT					WSAETIMEDOUT*/
+
+#ifdef  nx_errno
+#undef  nx_errno
+#define nx_errno h_errno
+#endif
+
+#define VSPRINTF _vsnprintf
+#define	SNPRINTF _snprintf
+
+#endif
